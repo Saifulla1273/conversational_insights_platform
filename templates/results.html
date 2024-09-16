@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Transcription</h1>
+    <p>{{ transcription }}</p>
+    
+    <h1>Topics</h1>
+    <ul>
+        {% for topic in topics %}
+        <li>{{ topic }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h1>Sentiment</h1>
+    <p>{{ sentiment }}</p>
+    
+    <h1>Insights</h1>
+    <ul>
+        {% for insight in insights %}
+        <li>{{ insight }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
